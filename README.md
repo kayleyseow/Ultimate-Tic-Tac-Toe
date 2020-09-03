@@ -25,3 +25,4 @@ Anika | ??? | ??? | ???
 - do we need a better method of collaboration like using LiveShare or Teletype?
 - are we just sticking to discord, or do we want to jump ship to messenger or wechat or something?
 - what are we doing??
+change
