@@ -5,7 +5,7 @@
 ### Here will be tests for making sure that all of have the ability to commit. 
 - [x] Vincent: "I did a thing"
 - [x] Kayley: "Good Morning, Kayley's tryna add smth :octocat:! trying another commit before going back to class :)"
-- [ ] Crystal: "???"
+- [x] Crystal: "Hi guys :D Thank you to Vincent for helping me"
 - [ ] Anika: "???"
 ### Here is a list of things that we need to do. 
 > feel free to fix this list as fit. 
@@ -19,7 +19,7 @@ Name | VS Code | Atom | Other
 -----|---------|------|-------
 Vincent | eh | yes | have used sublime text and notepad ++ before. 
 Kayley | yes | eh? | ???
-Crystal | yes | ??? | ???
+Crystal | yes | not yet | no
 Anika | ??? | ??? | ???
 ### Other things ("messaging board")
 - do we need a better method of collaboration like using LiveShare or Teletype?
