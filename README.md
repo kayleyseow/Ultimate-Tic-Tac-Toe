@@ -1,4 +1,4 @@
 # CPP-Project
 C++ Project.  
 
-Kayley's tryna add smth :octocat:  
+Good Morning, Kayley's tryna add smth :octocat:!  
