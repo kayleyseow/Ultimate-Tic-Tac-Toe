@@ -14,6 +14,7 @@
 - [ ] Figure out what we're going to do
 ### Here is a compilation of editors we are okay with. 
 Name | VS Code | Atom | Other
+-----|---------|------|-------
 Vincent | eh | yes | have used sublime text and notepad ++ before. 
 Kayley | yes | eh? | ???
 Crystal | yes | uhhhh | ???
