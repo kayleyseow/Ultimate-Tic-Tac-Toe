@@ -10,23 +10,23 @@
 ### Here is a list of things that we need to do.
 > feel free to fix this list as fit.
 - [x] Make a group
-- [ ] Is ankia part of our group?
+- [ ] Is Ankia part of our group?
 - [x] Make sure everybody has the ability to access and commit to the repo
 >not Anika tho
 - [ ] Perhaps find out a better way of collaboration
-    -are we just sticking with github or using something like teletype or liveshare?
-    -[ ] Teletype
-    -[ ] LiveSare
-    -[ ] Just github only
+<br>  -are we just sticking with github or using something like teletype or liveshare?
+<br>  -[ ] Teletype
+<br>  -[ ] LiveSare
+<br>  -[ ] Just github only
 - [ ] do we even need to have a unified development environment??
-  -[ ] no
-  -[ ] yes
-    -atom or Visual Studio or VS code? does liveshare work with Visual Studio??
+<br>  -[ ] no
+<br>  -[ ] yes
+<br>    -atom or Visual Studio or VS code? does liveshare work with Visual Studio??
 - [ ] Figure out what we're going to do
 - [ ] are we sticking with discord?
-  -[ ] yes
-  -[ ] messenger
-  -[ ] wechat
+<br>  -[ ] yes
+<br>  -[ ] messenger
+<br>  -[ ] wechat
 ### Here is a compilation of editors we are okay with.
 Name | VS Code | Atom | Other
 -----|---------|------|-------
@@ -35,4 +35,4 @@ Kayley | Visual Studio, *not* VSCode | With Vincent's help, yes | Sublime Text, 
 Crystal | yes | not yet | no
 Anika | ??? | ??? | ???
 ### Other things
->Apologies to Kayley, the thing looks is- Visual Studio looks identical to VS Code. 
+>Apologies to Kayley, the thing looks is- Visual Studio looks identical to VS Code.
