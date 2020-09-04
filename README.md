@@ -1,5 +1,5 @@
 # CPP-Project  
-#### Kayley/Crystal/Vincent/Anika  
+#### Kayley/Crystal/Vincent/Anika
 
 > This is going to be our official-ish github repo, not that we have anything done yet.
 ### Here will be tests for making sure that all of have the ability to commit.
@@ -11,8 +11,7 @@
 > feel free to fix this list as fit.
 - [x] Make a group
 - [ ] Is Ankia part of our group?
-- [x] Make sure everybody has the ability to access and commit to the repo
-<br>  not Anika though, she hasn't yet
+- [ ] Make sure everybody has the ability to access and commit to the repo
 - [ ] Perhaps find out a better way of collaboration
 <br>  are we just sticking with github or using something like teletype or liveshare?
 <br>  [ ] Teletype
@@ -30,9 +29,9 @@
 ### Here is a compilation of editors we are okay with.
 Name | VS Code | Atom | Other
 -----|---------|------|-------
-Vincent | eh | yes | have used sublime text and notepad ++ before.
+Vincent | eh, sure I guess... | yes | have used sublime text and notepad ++ before.
 Kayley | Visual Studio, *not* VSCode | With Vincent's help, yes | Sublime Text, dabbled with IntelliJ, has access to the rest of JetBrains anyways
-Crystal | yes | not yet | no
+Crystal | yes | ~not yet~ | no
 Anika | ??? | ??? | ???
 ### Other things
->Apologies to Kayley, the thing is that Visual Studio looks identical to VS Code.
+>Apologies to Kayley, the thing is that Visual Studio looks identical to VS Code to an untrained eye like mine.
