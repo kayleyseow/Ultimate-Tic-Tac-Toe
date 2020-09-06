@@ -33,4 +33,5 @@ Vincent | eh, sure I guess... | yes | have used sublime text and notepad ++ befo
 Kayley | Visual Studio, *not* VSCode | With Vincent's help, yes | Sublime Text, dabbled with IntelliJ, has access to the rest of JetBrains anyways
 Crystal | yes | ~not yet~ | no
 Anika | ??? | ??? | ???
-### Other things
+### Other things  
+who's gonna be on our team?? I feel like this has been up in the air for a couple of days now
