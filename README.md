@@ -10,7 +10,7 @@
 ### Here is a list of things that we need to do.
 > feel free to fix this list as fit.
 - [x] Make a group
-- [ ] Is Ankia part of our group?
+- [ ] Is Anika part of our group?
 - [ ] Make sure everybody has the ability to access and commit to the repo
 - [ ] Perhaps find out a better way of collaboration
 <br>  are we just sticking with github or using something like teletype or liveshare?
@@ -34,4 +34,3 @@ Kayley | Visual Studio, *not* VSCode | With Vincent's help, yes | Sublime Text, 
 Crystal | yes | ~not yet~ | no
 Anika | ??? | ??? | ???
 ### Other things
->Apologies to Kayley, the thing is that Visual Studio looks identical to VS Code to an untrained eye like mine.
