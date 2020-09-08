@@ -30,6 +30,7 @@ Crystal | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul>
  Anika  | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul>
 Tiffany | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul>
 <br>
+
 Name | VS Code | Atom | Other
 -----|---------|------|-------
 Vincent | <ul><li>[x] functional</li><li>[x] no issues</li></ul> | <ul><li>[x] functional</li><li>[x] no issues</li></ul> | sublime, notepad ++
