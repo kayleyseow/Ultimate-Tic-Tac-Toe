@@ -11,12 +11,13 @@
 > feel free to fix this list as fit.
 - [x] Make a group
 - [x] Is Anika part of our group? [*Yes*]
-- [ ] Make sure everybody has the ability to access and commit to the repo
+- [X] Make sure everybody has the ability to access and commit to the repo
 - [ ] Perhaps find out a better way of collaboration
 <br>  are we just sticking with github or using something like teletype or liveshare?
 <br>  [ ] Teletype
 <br>  [ ] LiveSare
 <br>  [ ] Just github only
+<br>  [ ] repl.it (online ide)
 - [ ] do we even need to have a unified development environment??
 <br>  [ ] no
 <br>  [ ] yes
@@ -26,7 +27,7 @@
 <br>  [ ] yes
 <br>  [ ] no, jump ship to messenger
 <br>  ~~[ ] no, I prefer wechat~~
-### Here is a compilation of editors we are okay with.
+### Here is a compilation of editors we are okay with
 Name | VS Code | Atom | Other
 -----|---------|------|-------
 Vincent | eh, sure I guess... | yes | have used sublime text and notepad ++ before.
