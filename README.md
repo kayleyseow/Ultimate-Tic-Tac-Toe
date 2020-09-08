@@ -35,3 +35,8 @@ Kayley | Visual Studio, *not* VSCode | With Vincent's help, yes | Sublime Text, 
 Crystal | yes | ~not yet~ | no
 Anika | ??? | ??? | ???
 ### Other things
+jfdlas;fkld
+jdslfjdf
+ioewjfkldas
+sdjaflkd
+dsjkflajfklasdj
