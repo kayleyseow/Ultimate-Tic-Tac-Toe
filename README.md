@@ -7,7 +7,7 @@
 - [x] Kayley: "Good Morning, Kayley's tryna add somethin :octocat:! trying another commit before going back to class :)"
 - [x] Crystal: "Hi guys :D Thank you to Vincent for helping me"
 - [x] Anika: "ok ! "
-- [ ] Tiffany: "???"
+- [ ] Tiffany: "Hi"
 ### Here is a list of things that we need to do.
 > feel free to fix this list as fit.
 - [x] Make a group
