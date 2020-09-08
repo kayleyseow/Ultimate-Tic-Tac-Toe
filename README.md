@@ -15,20 +15,21 @@ Name | Discord | Messenger | Other
 -----|---------|-----------|-------
 Vincent | <ul><li>[x] checked daily</li><li>[x] preferred</li></ul> | <ul><li>[x] checked daily</li><li>[x] preferred</li></ul> | ~~wechat~~
  Kayley | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | ???
-Crystal| <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | ???
- Anika | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | ???
-Tiffany| <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | ???
+Crystal | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | ???
+ Anika  | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | ???
+Tiffany | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | ???
 ### Editors
 do we even need to have a unified development environment??
 Name | Yes | No
 -----|-----|------
 pro| easy to help each other <br> allows us to use builtin collaboration methods | we can use our preferred editors
 con| some of us will need to need to move to a different editor | chaotic structure <br> difficulty with collaboration
-Vincent | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul>
- Kayley | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul>
-Crystal| <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul>
- Anika | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul>
-Tiffany| <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul>
+Vincent | <ul><li> [ ] </li></ul> | <ul><li> [x] because I don't really mind using either editor now </li></ul>
+ Kayley | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul>
+Crystal | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul>
+ Anika  | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul>
+Tiffany | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul>
+<br>
 Name | VS Code | Atom | Other
 -----|---------|------|-------
 Vincent | <ul><li>[x] functional</li><li>[x] no issues</li></ul> | <ul><li>[x] functional</li><li>[x] no issues</li></ul> | sublime, notepad ++
