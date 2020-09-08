@@ -35,8 +35,3 @@ Kayley | Visual Studio, *not* VSCode | With Vincent's help, yes | Sublime Text, 
 Crystal | yes | ~not yet~ | no
 Anika | idk | testing rn | sublime
 ### Other things
-jfdlas;fkld
-jdslfjdf
-ioewjfkldas
-sdjaflkd
-dsjkflajfklasdj
