@@ -10,7 +10,7 @@
 ### Here is a list of things that we need to do.
 > feel free to fix this list as fit.
 - [x] Make a group
-- [ ] Is Anika part of our group?
+- [x] Is Anika part of our group? [*Yes*]
 - [ ] Make sure everybody has the ability to access and commit to the repo
 - [ ] Perhaps find out a better way of collaboration
 <br>  are we just sticking with github or using something like teletype or liveshare?
@@ -25,7 +25,7 @@
 - [ ] are we sticking with discord?
 <br>  [ ] yes
 <br>  [ ] no, jump ship to messenger
-<br>  [ ] no, I prefer wechat
+<br>  ~~[ ] no, I prefer wechat~~
 ### Here is a compilation of editors we are okay with.
 Name | VS Code | Atom | Other
 -----|---------|------|-------
@@ -33,5 +33,4 @@ Vincent | eh, sure I guess... | yes | have used sublime text and notepad ++ befo
 Kayley | Visual Studio, *not* VSCode | With Vincent's help, yes | Sublime Text, dabbled with IntelliJ, has access to the rest of JetBrains anyways
 Crystal | yes | ~not yet~ | no
 Anika | ??? | ??? | ???
-### Other things  
-who's gonna be on our team?? I feel like this has been up in the air for a couple of days now
+### Other things
