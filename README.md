@@ -6,7 +6,7 @@
 - [x] Vincent: "I did a thing"
 - [x] Kayley: "Good Morning, Kayley's tryna add somethin :octocat:! trying another commit before going back to class :)"
 - [x] Crystal: "Hi guys :D Thank you to Vincent for helping me"
-- [ ] Anika: "???"
+- [x] Anika: "ok ! "
 ### Here is a list of things that we need to do.
 > feel free to fix this list as fit.
 - [x] Make a group
@@ -33,5 +33,10 @@ Name | VS Code | Atom | Other
 Vincent | eh, sure I guess... | yes | have used sublime text and notepad ++ before.
 Kayley | Visual Studio, *not* VSCode | With Vincent's help, yes | Sublime Text, dabbled with IntelliJ, has access to the rest of JetBrains anyways
 Crystal | yes | ~not yet~ | no
-Anika | ??? | ??? | ???
+Anika | idk | testing rn | sublime
 ### Other things
+jfdlas;fkld
+jdslfjdf
+ioewjfkldas
+sdjaflkd
+dsjkflajfklasdj
