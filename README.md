@@ -10,6 +10,7 @@
 >what is an acceptable frequency? is daily too much time? too little time?
 >preferred = usually online
 >we're trying to find a okay messaging platform, so check as many as you qualify for
+
 Name | Discord | Messenger | Other
 -----|---------|-----------|-------
 Vincent | <ul><li>[x] checked daily</li><li>[x] preferred</li></ul> | <ul><li>[x] checked daily</li><li>[x] preferred</li></ul> | ~~wechat~~
@@ -18,7 +19,7 @@ Crystal| <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | <ul><li>[ ]
  Anika | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | ???
 Tiffany| <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | ???
 ### Editors
-- [ ] do we even need to have a unified development environment??
+do we even need to have a unified development environment??
 Name | Yes | No
 -----|-----|------
 pro| easy to help each other <br> allows us to use builtin collaboration methods | we can use our preferred editors
