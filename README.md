@@ -15,7 +15,7 @@
 - [ ] Perhaps find out a better way of collaboration
 <br>  are we just sticking with github or using something like teletype or liveshare?
 <br>  [ ] Teletype
-<br>  [ ] LiveSare
+<br>  [ ] LiveShare
 <br>  [ ] Just github only
 <br>  [ ] repl.it (online ide)
 - [ ] do we even need to have a unified development environment??
