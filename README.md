@@ -2,16 +2,10 @@
 #### Kayley/Crystal/Vincent/Anika
 
 > This is going to be our official-ish github repo, not that we have anything done yet.
-### Here will be tests for making sure that all of have the ability to commit.
-- [x] Vincent: "I did a thing"
-- [x] Kayley: "Good Morning, Kayley's tryna add somethin :octocat:! trying another commit before going back to class :)"
-- [x] Crystal: "Hi guys :D Thank you to Vincent for helping me"
-- [x] Anika: "ok ! "
-- [ ] Tiffany: "Hi"
 ### Here is a list of things that we need to do.
 > feel free to fix this list as fit.
 - [x] Make a group
-- [ ] Make sure everybody has the ability to access and commit to the repo
+- [x] Make sure everybody has the ability to access and commit to the repo
 - [ ] Perhaps find out a better way of collaboration
 <br>  are we just sticking with github or using something like teletype or liveshare?
 <br>  [ ] Teletype
@@ -29,10 +23,11 @@
 ### Here is a compilation of editors we are okay with
 Name | VS Code | Atom | Other
 -----|---------|------|-------
-Vincent | eh, sure I guess... | yes | have used sublime text and notepad ++ before.
-Kayley | Visual Studio, *not* VSCode | With Vincent's help, yes | Sublime Text, dabbled with IntelliJ, has access to the rest of JetBrains anyways
-Crystal | yes | ~not yet~ | no
-Anika | idk | testing rn | Sublime
-Tiffany| ??? | ??? | ???
+Vincent | <ul><li>[x] functional</li><li>[x] no issues</li></ul> | <ul><li>[x] functional</li><li>[x] no issues</li></ul> | sublime, notepad ++
+ Kayley | <ul><li>[x] functional</li><li>[ ] no issues</li><li>[x] Visual Studio. Should be usable.</li></ul> | <ul><li>[x] functional</li><li>[ ] no issues</li></ul> | Sublime, IntelliJ, JetBrains
+Crystal| <ul><li>[x] functional</li><li>[x] no issues</li></ul> | <ul><li>[x] functional</li><li>[ ] no issues</li></ul> | no
+ Anika | <ul><li>[?] functional</li><li>[ ] no issues</li></ul> | <ul><li>[x] functional</li><li>[ ] no issues</li></ul> | Sublime
+Tiffany| <ul><li>[?] functional</li><li>[ ] no issues</li></ul> | <ul><li>[?] functional</li><li>[ ] no issues</li></ul> | ???
 ### Other things
-fixed branching. finally!
+> fixed branching. finally!
+> Commit checks removed. is Tiffany committing from in editor, or ?
