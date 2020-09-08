@@ -8,8 +8,8 @@
 - [ ] Figure out what we're going to do
 ### Messaging platform.
 >what is an acceptable frequency? is daily too much time? too little time?
->preferred = usually online
->we're trying to find a okay messaging platform, so check as many as you qualify for
+<br> preferred = usually online
+<br> we're trying to find a okay messaging platform, so check as many as you qualify for
 
 Name | Discord | Messenger | Other
 -----|---------|-----------|-------
