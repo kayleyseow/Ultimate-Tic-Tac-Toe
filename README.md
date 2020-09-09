@@ -37,7 +37,7 @@ Vincent | <ul><li>[x] functional</li><li>[x] no issues</li></ul> | <ul><li>[x] f
  Kayley | <ul><li>[x] functional</li><li>[ ] no issues</li><li>[x] Visual Studio</li></ul> | <ul><li>[x] functional</li><li>[ ] no issues</li></ul> | Sublime, IntelliJ, JetBrains
 Crystal| <ul><li>[x] functional</li><li>[x] no issues</li></ul> | <ul><li>[x] functional</li><li>[ ] no issues</li></ul> | no
  Anika | <ul><li>[?] functional</li><li>[ ] no issues</li></ul> | <ul><li>[x] functional</li><li>[ ] no issues</li></ul> | Sublime
-Tiffany| <ul><li>[?] functional</li><li>[ ] no issues</li></ul> | <ul><li>[?] functional</li><li>[ ] no issues</li></ul> | ???
+Tiffany| <ul><li>[?] functional</li><li>[ ] no issues</li></ul> | <ul><li>[?] functional</li><li>[ ] no issues</li></ul> | repl.it, sublime, jupyter notebook
 ### Other things
 > fixed branching. finally!
 <br> Commit checks removed.
