@@ -15,7 +15,7 @@ Name | Discord | Messenger | Other
 -----|---------|-----------|-------
 Vincent | <ul><li>[x] checked daily</li><li>[x] preferred</li></ul> | <ul><li>[x] checked daily</li><li>[x] preferred</li></ul> | ~~wechat~~
  Kayley | <ul><li>[x] checked daily</li><li>[x] preferred</li></ul> | <ul><li>[x] checked daily</li><li>[x] preferred</li></ul> | ???
-Crystal | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | ???
+Crystal | <ul><li>[x] checked daily</li><li>[x] preferred</li></ul> | <ul><li>[x] checked daily</li><li>[ ] preferred</li></ul> | ???
 Tiffany | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | <ul><li>[ ] checked daily</li><li>[x] preferred</li></ul> | ???
 ### Editors
 do we even need to have a unified development environment??
