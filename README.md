@@ -24,8 +24,8 @@ Name | Yes | No
 pro| easy to help each other <br> allows us to use builtin collaboration methods | we can use our preferred editors
 con| some of us will need to need to move to a different editor | chaotic structure <br> difficulty with collaboration
 Vincent | <ul><li> [ ] </li></ul> | <ul><li> [x] because I don't really mind using either editor now </li></ul>
- Kayley | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul>
-Crystal | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul>
+Kayley | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul>
+Crystal | <ul><li> [ ] </li></ul> | <ul><li> [x] </li></ul>
 Tiffany | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul>
 <br>
 
