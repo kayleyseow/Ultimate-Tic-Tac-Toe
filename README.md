@@ -7,16 +7,9 @@
 - [x] Make sure everybody has the ability to access and commit to the repo
 - [ ] Figure out what we're going to do
 ### Messaging platform.
->what is an acceptable frequency? is daily too much time? too little time?
-<br> preferred = usually online
-<br> we're trying to find a okay messaging platform, so check as many as you qualify for
-
-Name | Discord | Messenger | Other
------|---------|-----------|-------
-Vincent | <ul><li>[x] checked daily</li><li>[x] preferred</li></ul> | <ul><li>[x] checked daily</li><li>[x] preferred</li></ul> | ~~wechat~~
- Kayley | <ul><li>[x] checked daily</li><li>[x] preferred</li></ul> | <ul><li>[x] checked daily</li><li>[x] preferred</li></ul> | ???
-Crystal | <ul><li>[x] checked daily</li><li>[x] preferred</li></ul> | <ul><li>[x] checked daily</li><li>[ ] preferred</li></ul> | ???
-Tiffany | <ul><li>[ ] checked daily</li><li>[ ] preferred</li></ul> | <ul><li>[ ] checked daily</li><li>[x] preferred</li></ul> | ???
+>Messenger for most texting
+<br> Discord for calls
+<br> If emergency, ping both platforms. 
 ### Editors
 do we even need to have a unified development environment??
 Name | Yes | No
@@ -36,5 +29,5 @@ Vincent | <ul><li>[x] functional</li><li>[x] no issues</li></ul> | <ul><li>[x] f
 Crystal| <ul><li>[x] functional</li><li>[x] no issues</li></ul> | <ul><li>[x] functional</li><li>[ ] no issues</li></ul> | no
 Tiffany| <ul><li>[?] functional</li><li>[ ] no issues</li></ul> | <ul><li>[?] functional</li><li>[ ] no issues</li></ul> | repl.it, sublime, jupyter notebook
 ### Other things
-> fixed branching. finally!
-<br> Commit checks removed.
+> Commit checks removed.
+<br> Messaging platform finalized
