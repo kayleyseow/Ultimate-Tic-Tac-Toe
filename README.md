@@ -25,9 +25,9 @@ Tiffany | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul>
 Name | VS Code | Atom | Other
 -----|---------|------|-------
 Vincent | <ul><li>[x] functional</li><li>[x] no issues</li></ul> | <ul><li>[x] functional</li><li>[x] no issues</li></ul> | sublime, notepad ++
- Kayley | <ul><li>[x] functional</li><li>[ ] no issues</li><li>[x] Visual Studio</li></ul> | <ul><li>[x] functional</li><li>[ ] no issues</li></ul> | Sublime, the JetBrains Suite basically, repl.it, notepad++, glitch, codepen(prefer not to use this)
+ Kayley | <ul><li>[x] functional</li><li>[ ] no issues</li><li>[x] Visual Studio</li></ul> | <ul><li>[x] functional</li><li>[ ] no issues</li></ul> | Sublime, the JetBrains Suite basically, repl.it, notepad++, glitch, codepen(prefer not to use this, for webdev anyways)
 Crystal| <ul><li>[x] functional</li><li>[x] no issues</li></ul> | <ul><li>[x] functional</li><li>[ ] no issues</li></ul> | no
 Tiffany| <ul><li>[?] functional</li><li>[ ] no issues</li></ul> | <ul><li>[?] functional</li><li>[ ] no issues</li></ul> | repl.it, sublime, jupyter notebook
 ### Other things
 > Commit checks removed.
-<br> Messaging platform finalized
+<br> Messaging platforms finalized
