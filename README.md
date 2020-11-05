@@ -34,9 +34,4 @@ Vincent | eh, sure I guess... | yes | have used sublime text and notepad ++ befo
 Kayley | Visual Studio, *not* VSCode | With Vincent's help, yes | Sublime Text, dabbled with IntelliJ, has access to the rest of JetBrains anyways
 Crystal | yes | ~not yet~ | no
 Anika | ??? | ??? | ???
-### Other things
-jfdlas;fkld
-jdslfjdf
-ioewjfkldas
-sdjaflkd
-dsjkflajfklasdj
+### Other thing
