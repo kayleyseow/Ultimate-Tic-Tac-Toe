@@ -1,2 +1,3 @@
 for the explanation? tutorial? thing.
+Introduction to Ultimate Tic Tac Toe:
 "Ultimate" or "Strategic" tic-tac-toe is 
