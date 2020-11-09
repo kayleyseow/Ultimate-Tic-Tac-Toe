@@ -1,2 +1,9 @@
 for the explanation? tutorial? thing.
-"Ultimate" or "Strategic" tic-tac-toe is 
+Ultimate Tic-Tac-Toe is a game of strategy.
+"Ultimate" or "Strategic" tic-tac-toe is played on a large tic-tac -toe board,
+with a small tic-tac-toe in each grid, looking somewhat similar to a sudoku board without the numbers.
+The large 3x3 board is referred to as the global board
+and each small 3x3 board is referred to as a local board.
+INSTRUCTIONS
+the first move can be placed on any position of any of the local boards.
+the second move has to be placed in the local board that corresponds to the position of the first move (if the first move was )
