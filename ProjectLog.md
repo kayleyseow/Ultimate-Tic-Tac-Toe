@@ -1,10 +1,13 @@
 # Project Log 
-#### because markdown is just so much better than plain text 😌...  
+#### because markdown is just so much better than plain text 😌...ˢᵒʳʳʸ ᵛᶦⁿᶜᵉⁿᵗ  
 Think of this as a place to track down progress and plan for goals for the final product. Hopefully it will lead to less confusion :).    
+## Goals  
+- [ ] Starter code for project
+- [ ] Read up on C++ Graphics Docs
 
 ## Progress  
 ### 11/9/2020
-- Kayley finished the Introduction for Ultimate Tic Tac Toe over the weekend on [things.txt](https://github.com/kayleyseow/CPP-Project/blob/master/things.txt). Thinking of keeping the introduction and the instructions of the game seperate as we built it. 
+- Kayley finished the Introduction for Ultimate Tic Tac Toe over the weekend on [things.txt](https://github.com/kayleyseow/CPP-Project/blob/master/things.txt). Thinking of keeping the introduction and the instructions of the game seperate as we build it. 
 - Crystal emailed the Project Notes to Mr. Hoffman this morning. Here's a taste:  
   >   We are planning on doing Ultimate Tic Tac Toe for our project. We were planning out how we wanted the start screen to look like.
 We have an introduction written out that will display when you start the game:
