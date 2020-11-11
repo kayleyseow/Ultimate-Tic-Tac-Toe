@@ -26,10 +26,11 @@ Ellen | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul>
 Name | VS Code | Atom | Other
 -----|---------|------|-------
 <<<<<<< HEAD
-Vincent | eh, sure I guess... | yes | have used sublime text and notepad ++ before.
-Kayley | Visual Studio, *not* VSCode | With Vincent's help, yes | Sublime Text, dabbled with IntelliJ, has access to the rest of JetBrains anyways
-Crystal | yes | ~not yet~ | no
-Anika | ??? | ??? | ???
+Vincent | eh, sure I guess... | yes | have used sublime text and notepad ++ before.  
+Kayley | Visual Studio, *not* VSCode | With Vincent's help, yes | Sublime Text, dabbled with IntelliJ, has access to the rest of JetBrains anyways  
+Crystal | yes | ~not yet~ | no  
+Ellen | ??? | Yes | ???  
+Tiffany | mayhaps? | Yes | repl.it being mentioned?  
 ### Other thing
 =======
 Vincent| <ul><li>[x] functional</li><li>[x] no issues</li></ul> | <ul><li>[x] functional</li><li>[x] no issues</li></ul> | sublime, notepad ++
