@@ -33,7 +33,7 @@ Anika | ??? | ??? | ???
 ### Other thing
 =======
 Vincent| <ul><li>[x] functional</li><li>[x] no issues</li></ul> | <ul><li>[x] functional</li><li>[x] no issues</li></ul> | sublime, notepad ++
- Kayley| <ul><li>[x] functional</li><li>[ ] no issues</li><li>[x] Visual Studio</li></ul> | <ul><li>[x] functional</li><li>[ ] no issues</li></ul> | Sublime, the JetBrains Suite basically, repl.it, notepad++, glitch, codepen(prefer not to use this, for webdev anyways)
+ Kayley| <ul><li>[x] functional</li><li>[x] no issues</li><li>[x] Visual Studio</li></ul> | <ul><li>[x] functional</li><li>[ ] no issues</li></ul> | Sublime, the JetBrains Suite basically, repl.it, notepad++, glitch, codepen(prefer not to use this, for webdev anyways)
 Crystal| <ul><li>[x] functional</li><li>[x] no issues</li></ul> | <ul><li>[x] functional</li><li>[ ] no issues</li></ul> | no
 Tiffany| <ul><li>[x] functional</li><li>[ ] no issues</li></ul> | <ul><li>[?] functional</li><li>[ ] no issues</li></ul> | repl.it, sublime, jupyter notebook
  Ellen | <ul><li>[x] functional</li><li>[x] no issues</li></ul> | <ul><li>[x] functional</li><li>[x] no issues</li></ul>
