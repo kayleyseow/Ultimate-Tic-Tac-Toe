@@ -7,8 +7,10 @@ Think of this as a place to track down progress and plan for goals for the final
 - [ ] How are we going to divide up the work?
 
 ## Progress  
-### 11/9/2020
--Vincent made some pseudocode (unfinished)
+#### 11/12/2020
+- Vincent made some pseudocode (unfinished), check [pseudocode.cpp](https://github.com/kayleyseow/CPP-Project/blob/master/pseudocode.cpp)  
+- In class, discussed with Hoffman about the structure of our program
+#### 11/9/2020
 - Kayley finished the Introduction for Ultimate Tic Tac Toe over the weekend on [things.txt](https://github.com/kayleyseow/CPP-Project/blob/master/things.txt). Thinking of keeping the introduction and the instructions of the game seperate as we build it.
 - Crystal emailed the Project Notes to Mr. Hoffman this morning. Here's a taste:  
   >   We are planning on doing Ultimate Tic Tac Toe for our project. We were planning out how we wanted the start screen to look like.
