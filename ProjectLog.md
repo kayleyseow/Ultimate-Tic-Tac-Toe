@@ -4,6 +4,7 @@ Think of this as a place to track down progress and plan for goals for the final
 ## Goals  
 - [ ] Starter code for project
 - [ ] Read up on C++ Graphics Docs
+- [ ] How are we going to divide up the work?
 
 ## Progress  
 ### 11/9/2020
