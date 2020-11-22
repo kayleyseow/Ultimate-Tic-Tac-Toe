@@ -1,13 +1,25 @@
-void welcome(bool x)
+int welcome(bool x)
 {
+    //if x==true, no tutorial
     //buttons and stuff.
+    //iftutorial， return1
+    //if play, return 2
+    //if exit, return 3
 }
 
 
-bool getPos(int oldb[9], int board[9])
+void tutorial ()
 {
-    int temp[] = board[] - oldb[];
-    if (temp[] == [0,0,0,0,0,0,0,0,0])
+    //tutorial on how to play
+}
+
+
+int getPos(int oldb[9], int board[9])
+{
+    int temp[9]
+    temp[0] = board[0]-oldb[0];
+    ...
+    if (temp == [0,0,0,0,0,0,0,0,0]);
     {
 
     }
@@ -15,16 +27,25 @@ bool getPos(int oldb[9], int board[9])
 
 void draw (int board[9])
 {
+    //shit.
+}
 
+
+wincheck (int board[9])
+{
+    //returns 0 if nobody won
+    //returns 1 if X wins
+    //returns 2 if O wins
 }
 
 
 void winner (int board[])
 {
+    bool playagain;
     //prints a screen announcing winner, gives option to exit or play again
     if (playagain)
     {
-        welcome(true)
+        welcome(true);
     }
 }
 
@@ -32,20 +53,20 @@ void winner (int board[])
 int main ()
 {
     int oldb[9], board[9];
-    welcome(false);
-    if(tutorialButton is pressed) tutorial();
-    if(newGame)
+    int x = welcome(false);
+    if(x == 1) tutorial();
+    while(x == 2)
     {
-        oldb = int[0,0,0,0,0,0,0,0,0];
-        board = int[0,0,0,0,0,0,0,0,0];
+        oldb[0-8] = 0;
+        board[0-8] = 0;
         draw(board);
-        while(!winCheck(board))
+        while(winCheck(board)==0)
         {
-            getPos(oldboard,board);
+            int p = getPos(oldboard,board);
             oldboard=board;
             board=inputX();
             draw(board);
-            if(!winCheck(board))
+            if(winCheck(board)==0)
             {
             getPos(oldboard, board);
             oldboard=board;
@@ -55,5 +76,5 @@ int main ()
         }
         winner(board);
     }
-    if(exit) return 1;
+    if(x==3) return 1;
 }
