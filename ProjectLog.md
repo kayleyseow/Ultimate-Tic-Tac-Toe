@@ -1,31 +1,37 @@
 # Project Log
-#### because markdown is just so much better than plain text 😌...ˢᵒʳʳʸ ᵛᶦⁿᶜᵉⁿᵗ  
-Think of this as a place to track down progress and plan for goals for the final product. Hopefully it will lead to less confusion :).    
 ## Goals
-- add forcequit functions (forfeiture)
 
-- [ ]```welcome()```
-- easy, but needs graphics
-- [ ]```tutorial()```
-- uses draw function and lots of code, plus some text.
-- should be pretty chill after draw gets figured out
+#####array functions
 - [ ]```winCheck()```
 - deals with the arrays
 - actually two functions
 - make sure to take into account ties (big board)
 - math
+- Crystal
 - [ ]```getPos()```
 - calculates difference between the arrays.
 - math
+- Ellen
+
+#####graphics functions
+- [ ]```welcome()```
+- easy, but needs graphics
+- Tiffany
 - [ ]```draw```
 - fuck
+- Vincent
+- [ ]```tutorial()```
+- uses draw function and lots of code, plus some text.
+- should be pretty chill after draw gets figured out
+- Kayley? maybe idk ask later
+
+#####everything things, fuck
 - [ ]```winner()```
 - similar to welcome.
 - [ ]```input```
 - pretty painful, need to figure out draw first, then use mouse position probably. or use text input, idk
+- [ ] add forcequit functions (forfeiture)
 
-- [ ] Read up on C++ Graphics Docs
-- [ ] How are we going to divide up the work?
 
 ## Progress  
 #### 20-11-24
