@@ -1,4 +1,4 @@
-# Project Log
+# Project Log  
 ## Goals
 
 #####array functions
@@ -33,9 +33,13 @@
 - [ ] add forcequit functions (forfeiture)
 
 
-## Progress  
+## Progress
 #### 20-11-24
 - Pseudocode complete
+- functions assigned ish
+- Kayley what function do you want to do
+- winCheck function has to check if the board is full/if there is still a possible move (new function for this?) and then check if there is a tie
+- winner function is a graphics function that will need to use draw function: screen showing whether X won, O won, there was a tie, or you guys exited the game early
 #### 11/12/2020
 - Vincent made some pseudocode (unfinished), check [pseudocode.cpp](https://github.com/kayleyseow/CPP-Project/blob/master/pseudocode.cpp)  
 - In class, discussed with Hoffman about the structure of our program
