@@ -1,7 +1,6 @@
 # Project Log  
 ## Goals
-
-####array functions
+#### array functions
 - [ ] ```winCheck()```
 - deals with the arrays
 - actually two functions
@@ -12,8 +11,7 @@
 - calculates difference between the arrays.
 - math
 - Ellen
-
-####graphics functions
+#### graphics functions
 - [ ] ```welcome()```
 - easy, but needs graphics
 - Tiffany
@@ -24,17 +22,16 @@
 - uses draw function and lots of code, plus some text.
 - should be pretty chill after draw gets figured out
 - Kayley? maybe idk ask later
-
-####everything things, fuck
+#### everything things, fuck
 - [ ] ```winner()```
 - similar to welcome.
 - [ ] ```input```
 - pretty painful, need to figure out draw first, then use mouse position probably. or use text input, idk
 - [ ] add forcequit functions (forfeiture)
 
-
 ## Progress
-#### 20-11-24
+#### 11/24/2020
+- Group Call on the Discord group vc
 - Pseudocode complete
 - functions assigned ish
 - Kayley what function do you want to do
