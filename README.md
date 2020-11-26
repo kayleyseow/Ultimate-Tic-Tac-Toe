@@ -7,6 +7,7 @@
 - [x] Make sure everybody has the ability to access and commit to the repo
 - [x] Figure out what we're going to do
 - [x] assignish tasks
+
 Name    | Task | notes
 --------|---------|-------
 Vincent | ```draw()``` | [ ]
@@ -14,7 +15,7 @@ Kayley  | ```tutorial()``` | [ ]
 Crystal | ```winCheck()``` | [ ]
 Ellen   | ```getPos()``` | [ ]
 Tiffany | ```welcome()``` | [ ]
-Unassigned | ```winner()```, ```input```, some sort of forcequit | 
+Unassigned | ```winner()```, ```input```, some sort of forcequit |
 ### Messaging platform.
 >Messenger (lol we're using discord anyway) for most texting
 <br> Discord for calls
