@@ -1,34 +1,34 @@
 # Project Log  
 ## Goals
 
-#####array functions
-- [ ]```winCheck()```
+####array functions
+- [ ] ```winCheck()```
 - deals with the arrays
 - actually two functions
 - make sure to take into account ties (big board)
 - math
 - Crystal
-- [ ]```getPos()```
+- [ ] ```getPos()```
 - calculates difference between the arrays.
 - math
 - Ellen
 
-#####graphics functions
-- [ ]```welcome()```
+####graphics functions
+- [ ] ```welcome()```
 - easy, but needs graphics
 - Tiffany
-- [ ]```draw```
+- [ ] ```draw```
 - fuck
 - Vincent
-- [ ]```tutorial()```
+- [ ] ```tutorial()```
 - uses draw function and lots of code, plus some text.
 - should be pretty chill after draw gets figured out
 - Kayley? maybe idk ask later
 
-#####everything things, fuck
-- [ ]```winner()```
+####everything things, fuck
+- [ ] ```winner()```
 - similar to welcome.
-- [ ]```input```
+- [ ] ```input```
 - pretty painful, need to figure out draw first, then use mouse position probably. or use text input, idk
 - [ ] add forcequit functions (forfeiture)
 
