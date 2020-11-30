@@ -30,6 +30,11 @@
 - [ ] add forcequit functions (forfeiture)
 
 ## Progress
+#### 11/30/2020
+- Group Breakout room during class → Discord vc
+- Crystal went over her pseudocode with us, ```winCheck()```
+  - Array of arrays
+- In order for Mr. Hoffman to check up on our progress, we are adding him to this repo tomorrow morning
 #### 11/24/2020
 - Group Call on the Discord group vc
 - Pseudocode complete
