@@ -479,6 +479,7 @@ int main()
 		cout << "\n==>Congratulations! " << playerName[1] <<" WIN\n\n";
 	else
 		cout << "\n==>Game DRAW. Please play again.\n\n";
+	debug_print_steps();
 	cin.ignore();
 	return 0;
 }
