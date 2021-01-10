@@ -1,6 +1,6 @@
 // Program snippet for the tutorial
 // to be shown after the welcome snippet
-//Current code snippet is able to repeat the tutorial for as many times as the user needs. Features to add include the tutorial itself, and a better way to check to repeat the tutorial.
+//Current code snippet is able to repeat the tutorial for as many times as the user needs. Features to add include the tutorial itself (messaged Crystal to clarify the rules).
 
 #include <iostream>
 #include <string>
@@ -16,6 +16,12 @@ void tutorial()
 	cout << "Would you like to view the tutorial for Ultimate Tic Tac Toe? (Type \"Y\" for yes and \"N\" for no)\n";
 	cin >> tutorialanswer;
 	tutorialanswer = tolower(tutorialanswer);
+	while (tutorialanswer != 'n' && tutorialanswer != 'y')
+	{
+		cout << "Please yype \"Y\" for yes and \"N\" for no)\n";
+		cin >> tutorialanswer;
+		tutorialanswer = tolower(tutorialanswer);
+	}
 	while (tutorialanswer == 'y')
 	{
 		//calls the actual tutorial function -- tutorial print
@@ -23,6 +29,12 @@ void tutorial()
 		cout << "Would you like to view the tutorial for Ultimate Tic Tac Toe again? (Type \"Y\" for yes and \"N\" for no)\n";
 		cin >> tutorialanswer;
 		tutorialanswer = tolower(tutorialanswer);
+		while (tutorialanswer != 'n' && tutorialanswer != 'y')
+		{
+			cout << "Please yype \"Y\" for yes and \"N\" for no)\n";
+			cin >> tutorialanswer;
+			tutorialanswer = tolower(tutorialanswer);
+		}
 	}
 }
 
