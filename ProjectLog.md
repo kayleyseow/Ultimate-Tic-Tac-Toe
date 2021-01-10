@@ -30,6 +30,14 @@
 - [ ] add forcequit functions (forfeiture)
 
 ## Progress
+#### 1/9/2021
+- Kayley pushed her code to the repository of `tutorial()`, check [tutorial_command_line.cpp](https://github.com/kayleyseow/CPP-Project/blob/master/tutorial_command_line.cpp)
+- `tutorial_command_line.cpp`, as the name suggests, uses the command line, team communication on GUI TBD
+- Current code is able to repeat the tutorial for as many times as the user needs
+#### 1/4/2021
+- Crystal pushed her code to the repository, check [ultimate_tic_toe.cpp](https://github.com/kayleyseow/CPP-Project/blob/master/ultimate_tic_toe.cpp)
+  - There's also another file called ultimate_tic_toe without the .cpp so I might delete that later after I confirm with her
+- It is basically the whole game (which can be played through the command line), no GUI yet
 #### 11/30/2020
 - Group Breakout room during class → Discord vc
 - Crystal went over her pseudocode with us, ```winCheck()```
