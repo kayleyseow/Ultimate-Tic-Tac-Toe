@@ -1,5 +1,11 @@
+// Program snippet for the getPosition() function
+// We had originally planned to add this in in the main game (check pseudocode.cpp), but in the end our final function did not utilize this function
+
 #include <iostream>
 using namespace std;
+
+// Function Declaration:
+string getPosition();
 
 string getPosition(){
 
@@ -19,7 +25,7 @@ string getPosition(){
       board = 'C';
     case 4:
       board = 'D';
-    case 5: 
+    case 5:
       board = 'E';
     case 6:
       board = 'F';
@@ -35,12 +41,11 @@ string getPosition(){
   cout<<"enter a position";
 
   cin<<pos;
-  
+
   if(winCheck(board_num)== "X" || "O"){
     return "Board already occupied. Try again.";
   }
   else{
     return board + pos;
-  }
   }
 }

@@ -1,10 +1,11 @@
-//program for the welcome function
+// Program snippet for the welcome function
 
 #include <iostream>
 #include <string>
 
 using namespace std;
 
+// Function Declarations:
 void tutorial();
 void exitwelcome();
 
@@ -28,7 +29,7 @@ void welcome()
 	}
   else if (playerinput == '2')
 	{
-		
+
 	}
   else if (playerinput == '3')
 	{

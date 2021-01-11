@@ -49,7 +49,7 @@ int getPos(int oldb[9], int board[9])
 
 void draw (int board[9])
 {
-    //shit.
+    //yay! draw!
 }
 
 

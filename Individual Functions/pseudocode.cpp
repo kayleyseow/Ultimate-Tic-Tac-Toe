@@ -1,3 +1,5 @@
+// Pseudocode for our original planned layout of the Ultimate Tic Tac Toe program
+
 int welcome()
 {
     //buttons and stuff.
@@ -49,7 +51,7 @@ int getPos(int oldb[9], int board[9])
 
 void draw (int board[9])
 {
-    //shit.
+    //draw on the board
 }
 
 
