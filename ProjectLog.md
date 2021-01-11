@@ -30,6 +30,8 @@
 - [ ] add forcequit functions (forfeiture)
 
 ## Progress
+#### 1/10/2021
+
 #### 1/9/2021
 - Kayley pushed her code to the repository of `tutorial()`, check [tutorial_command_line.cpp](https://github.com/kayleyseow/CPP-Project/blob/master/tutorial_command_line.cpp)
 - `tutorial_command_line.cpp`, as the name suggests, uses the command line, team communication on GUI TBD
