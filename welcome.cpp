@@ -12,7 +12,7 @@ void welcome()
 {
 	char playerinput;
   cout << " ----------------------------------------" <<endl;
-  cout << "|	      Ultimate Tic Tac Toe	     	|"<<endl;
+  cout << "|	      Ultimate Tic Tac Toe	          |"<<endl;
   cout << " ----------------------------------------" <<endl;
   cout << "| Enter '1' to display the game Tutorial |" <<endl;
   cout << "| Enter '2' to play the game             |" <<endl;
