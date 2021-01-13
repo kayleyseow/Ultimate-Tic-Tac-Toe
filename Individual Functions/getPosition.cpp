@@ -1,6 +1,5 @@
 // Program snippet for the getPosition() function
 // We had originally planned to add this in in the main game (check pseudocode.cpp), but in the end our final function did not utilize this function
-// By Ellen F.
 
 #include <iostream>
 using namespace std;

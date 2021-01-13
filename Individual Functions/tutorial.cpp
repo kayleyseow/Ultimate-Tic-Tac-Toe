@@ -1,7 +1,6 @@
 // Program snippet for the tutorial function
 // To be shown after the introduction snippet in main()
 // Current code snippet is able to repeat the tutorial for as many times as the user needs, a way to check user input, a way to check to repeat the tutorial, and the tutorial itself.
-// By Kayley S.
 
 #include <iostream>
 #include <string>
