@@ -1,4 +1,5 @@
 // Program snippet for the welcome function
+// By Tiffany Z.
 
 #include <iostream>
 #include <string>
