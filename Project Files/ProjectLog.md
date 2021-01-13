@@ -1,11 +1,17 @@
 # Project Log  
 **A log of our progress on this project.**
+#### 1/13/2021
+- Discord vc over office hours to finalize project and presentation
+- Vincent pushed final commented code in `welcome.cpp`, Kayley renamed file to `ultimateTicTacToe.cpp`
+- Kayley renamed repository from `CPP-Project` to `Ultimate-Tic-Tac-Toe`
+- Presentation and code sent to Hoffman, we should be set!
 #### 1/12/2021
 - We had an hour long Discord vc and started getting the finishing touches done on our project
 - Tiffany and Ellen worked on the presentation, waiting until Hoffman gets back to us for the design document
+  - Update: no design document needed
 - Vincent (Crystal) worked on the final code and formatting
 - Kayley worked on organizing all of the files into folders and cleaning up the repository
-  - Had to switch to glitch because in the middle Atom stopped connecting to the repository
+  - Had to switch to glitch because in the middle of organizing Atom stopped connecting to the repository
 #### 1/11/2021
 - Vincent continued to work on our huge compiled file
 #### 1/10/2021
@@ -15,7 +21,7 @@
   - Kayley finished writing the tutorial and finished the final version of `tutorial.cpp` to be put into the final program
   - Kayley also finished `introduction.cpp`, to be put into final program as well
   - Ellen pushed her current code of `getPosition.cpp` to master
-  - Tiffany pushed her code of `welcome.cpp` to master, basically the backbone of the `main()` function in final Program
+  - Tiffany pushed her code of `welcome.cpp` to master, basically the backbone of the `main()` function in final program
 - Vincent is tasked with compiling everything into the main program
 - Ellen, Crystal, and Tiffany started working on the presentation slides
 - Kayley did a lot of file organizing and making sure we had everything in place
@@ -25,7 +31,7 @@
 - Current code is able to repeat the tutorial for as many times as the user needs
 #### 1/4/2021
 - Crystal pushed her code to the repository, check `ultimate_tic_toe.cpp`
-  - There's also another file called ultimate_tic_toe without the .cpp so I might delete that later after I confirm with her
+  - There's also another file called ultimate_tic_toe without the .cpp so might delete that later after confirmation with her
 - It is basically the whole game (which can be played through the command line), no GUI yet
 #### 11/30/2020
 - Group Breakout room during class → Discord vc
