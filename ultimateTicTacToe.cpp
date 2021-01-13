@@ -1,4 +1,4 @@
-//program for the welcome function
+//  Final Program
 
 #include <iostream>
 #include <string>
@@ -10,15 +10,15 @@ using namespace std;
 
 
 void tutorial();		// The tutorial function is the main function, handles interactive element.
-void tutorialprint();	// The tutorialprint function prints the tutorial, is the static portion.
-void printBoard(); 		// the function to draw the game board
-void markPosition();	// Put value PLAYERX or PLAYERO to the position in the specified tic tac toe square
-bool checkPosition();	//Check the position in the specified tic tac toe square, return false if spot is taken or is grid full. if spot has initial value, true.
-bool checkGridFull();	// Check if all the legal spots are taken. Return "false" if there is more legal spots, otherwise return "true"
+void tutorialprint();		// The tutorialprint function prints the tutorial, is the static portion.
+void printBoard();		// the function to draw the game board
+void markPosition();		// Put value PLAYERX or PLAYERO to the position in the specified tic tac toe square
+bool checkPosition();		//Check the position in the specified tic tac toe square, return false if spot is taken or is grid full. if spot has initial value, true.
+bool checkGridFull();		// Check if all the legal spots are taken. Return "false" if there is more legal spots, otherwise return "true"
 int checkwin();			// Checks for winner given whichTtt, returns winner if there is one, returns o if there is not.
-int checkFinalWin();	// Same as checkwin, except for condensed board instead of whichTtt.
-void formatGameRow();	// Format one line of string for the game board print - row; start with 1 (not 0)
-void debug_print_steps();// Prints all the moves made. For debugging.
+int checkFinalWin();		// Same as checkwin, except for condensed board instead of whichTtt.
+void formatGameRow();		// Format one line of string for the game board print - row; start with 1 (not 0)
+void debug_print_steps();	// Prints all the moves made. For debugging.
 int game();
 
 /*
