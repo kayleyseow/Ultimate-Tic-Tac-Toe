@@ -1,90 +1,16 @@
-//program for the welcome function
+// Program snippet of the playable ultimate tic tac toe game
+// By Crystal Z.
 
 #include <iostream>
-#include <string>
-
-#define PLAYERX				98
-#define PLAYERO				99
-
 using namespace std;
 
-
-void tutorial();
-void tutorialprint();
-string getPosition();
-void printBoard(); // the function to draw the game board
-
-
-// The tutorial function is the main function, which repeats the calls to tutorialprint()
-void tutorial()
-{
-	char tutorialanswer = 'y';
-	while (tutorialanswer == 'y')
-	{
-		//calls the actual tutorial function (tutorialprint())
-		tutorialprint();
-		cout << "Would you like to view the tutorial for Ultimate Tic Tac Toe again? (Type \"Y\" for yes and \"N\" for no)\n";
-		cin >> tutorialanswer;
-		tutorialanswer = tolower(tutorialanswer); // The tolower() function is used in order to catch user input error
-		// This while loop is to check user input -- if the user inputs something other than "y" or "n", user is asked to enter their input again
-		while (tutorialanswer != 'n' && tutorialanswer != 'y')
-		{
-			cout << "Please type \"Y\" for yes and \"N\" for no)\n";
-			cin >> tutorialanswer;
-			tutorialanswer = tolower(tutorialanswer); // The tolower() function is used in order to catch user input error
-		}
-	}
-}
-
-// The tutorialprint function prints the tutorial itself -- interactive element is the requirement that the user press RETURN to move onto the next rule
-void tutorialprint()
-{
-	// First Part (1/6)
-	cout << "Each small 3 x 3 tic-tac-toe board is referred to as a local board, and the larger 3 x 3 board is \n";
-	cout << "referred to as the global board. Local boards are separated by double lines. We have a \n";
-	cout << "condensed global board(condensed board), which is printed below the global board. \n";
-	cout << "Press RETURN to continue.\n";
-	// The program is weird if cin.ignore() is not added, so that is why it is uncommented here
-	cin.ignore();
-	cin.get();
-
-	// Second Part (2/6)
-	cout << "The game starts with X playing wherever they want in any of the 81 empty spots. The global \n";
-	cout << "board is labeled with numbers 1 - 81, which players type into the console to make their moves.\n";
-	cout << "Press RETURN to continue.\n";
-	//cin.ignore();
-	cin.get();
-
-	// Third Part (3/6)
-	cout << "This move \"sends\" their opponent to its relative location. For example, if X played in the top right \n";
-	cout << "square of their local board, then O needs to play their next move in the top right local board. O \n";
-	cout << "can then play in any one of the nine available spots in that local board, each move sending X to \n";
-	cout << "a different local board.\n";
-	cout << "Press RETURN to continue.\n";
-	//cin.ignore();
-	cin.get();
-
-	// Fourth Part (4/6)
-	cout << "If a move is played so that it is to win a local board by the rules of normal tic-tac-toe, then the \n";
-	cout << "entire local board is marked as a victory for the player in the condensed board at the bottom.\n";
-	cout << "Press RETURN to continue.\n";
-	//cin.ignore();
-	cin.get();
-
-	// Fifth Part (5/6)
-	cout << "Once a local board is won by a player or it is filled completely, no more moves may be played in \n";
-	cout << "that board.If a player is sent to such a board, then that player may play on any other board.\n";
-	cout << "Press RETURN to continue.\n";
-	//cin.ignore();
-	cin.get();
-
-	// Sixth Part (6/6)
-	cout << "Game play ends when either a player wins the global board or there are no legal moves \n";
-	cout << "remaining, in which case the game is a draw.\n";
-	cout << "Press RETURN to continue.\n";
-	//cin.ignore();
-	cin.get();
-}
+/*
+ * The game board will be initialized with number 1, 2, ... 81.
+ * PLAYERX and PLAYERO can be any two digits numbers which are greater than 81.
+ * We choose 98 and 99
+ */
+#define PLAYERX				98
+#define PLAYERO				99
 
 
 /*
@@ -100,12 +26,14 @@ void tutorialprint()
  *      ---------------------|----------------------|---------------------
  *		[6][0] [6][1] [6][2] | [7][0] [7][1] [7][2] | [8][0] [8][1] [8][2]
  *		[6][3] [6][4] [6][5] | [7][3] [7][4] [7][5] | [8][3] [8][4] [8][5]
- *		[6][6] [6][7] [6][8] | [7][6] [7][7] [7][8] | [8][6] [8][7] [8][8]
+ *		[6][6] [6][7] [6][8] | [7][6] [7][7] [7][8] | [8][6] [8][7] [8][8]  
  *
  */
 int  tttGrid[9][9];
+
 /* for debugging purpose, it is a good idea to record all the steps */
 int gameSteps[81];
+
 /*
  * We will use one dimension array of 9 elements to represent tic tac toe:
  * the array index and tic tac toe board:
@@ -116,11 +44,19 @@ int gameSteps[81];
  *      [6] | [7] | [8]
  */
 int  condenseGrid[9];
+
+/*
+ * There are 9 tic tac toe sqaures. Each tic tac toe has 9 continuous integer values.
+ * This array indicates the start integer value for each square
+ */
 int  thisTTTStart[9];
 
+/* the function to draw the game board */
+void printBoard();
 
-// Put value PLAYERX or PLAYERO to the position in the specified tic tac toe square
-
+/*
+ * Put value PLAYERX or PLAYERO to the position in the specified tic tac toe square
+ */
 void markPosition(char player, int whichTtt, int position)    // position is 0, 1, 2, ... 8
 {
 	/* make sure that player correct */
@@ -376,7 +312,7 @@ void debug_print_steps()
 
 
 
-int game()
+int main()
 {
 	int  i, j, k;
 	int userSelection, whichTtt, position;
@@ -619,41 +555,4 @@ void printBoard()
 	cout << vert;
 	cout << rows;
 	cout << vert;
-}
-
-
-int main()
-{
-	bool exit = false;
-	while (!exit)
-	{
-		char playerinput;
-		cout << "+----------------------------------------+" <<endl;
-		cout << "|         Ultimate Tic Tac Toe           |" <<endl;
-		cout << "+----------------------------------------+" <<endl;
-		cout << "| Enter '1' to display the game Tutorial |" <<endl;
-		cout << "| Enter '2' to play the game             |" <<endl;
-		cout << "| Enter '3' to exit the game             |" <<endl;
-		cout << "+----------------------------------------+" <<endl;
-
-		cin >> playerinput;
-
-		if (playerinput == '1')
-		{
-			tutorial();
-		}
-		else if (playerinput == '2')
-		{
-			game();
-		}
-		else if (playerinput == '3')
-		{
-			exit=true;
-		}
-		else
-		{
-			cout<< "Selection Invalid [Back to welcome screen]" <<endl;
-		}
-	}
-	return 0;
 }

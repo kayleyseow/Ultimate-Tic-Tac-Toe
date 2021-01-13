@@ -1,5 +1,6 @@
 // Program snippet for the introduction; to be put in main()
 // This is a function by itself solely for organization purposes; we figured to have this entire chunk of text in main() would be painful
+// By Kayley S.
 
 #include <iostream>
 #include <string>
