@@ -3,35 +3,35 @@ using namespace std;
 
 /*
  * The game board will be initialized with number 1, 2, ... 81.
- * PLAYERX and PLAYERO can be any two digits numbers which are greater than 81. 
+ * PLAYERX and PLAYERO can be any two digits numbers which are greater than 81.
  * We choose 98 and 99
  */
 #define PLAYERX				98
 #define PLAYERO				99
 
 
-/* 
- * The real game board, which has 9x9 grids. 
+/*
+ * The real game board, which has 9x9 grids.
  * Please note the special index arrangement!!:
- *		[0][0] [0][1] [0][2] | [1][0] [1][1] [1][2] | [2][0] [2][1] [2][2]  
- *		[0][3] [0][4] [0][5] | [1][3] [1][4] [1][5] | [2][3] [2][4] [2][5]  
- *		[0][6] [0][7] [0][8] | [1][6] [1][7] [1][8] | [2][6] [2][7] [2][8]  
+ *		[0][0] [0][1] [0][2] | [1][0] [1][1] [1][2] | [2][0] [2][1] [2][2]
+ *		[0][3] [0][4] [0][5] | [1][3] [1][4] [1][5] | [2][3] [2][4] [2][5]
+ *		[0][6] [0][7] [0][8] | [1][6] [1][7] [1][8] | [2][6] [2][7] [2][8]
  *      ---------------------|----------------------|---------------------
- *		[3][0] [3][1] [0][2] | [4][0] [4][1] [4][2] | [5][0] [5][1] [5][2]  
- *		[3][3] [3][4] [0][5] | [4][3] [4][4] [4][5] | [5][3] [5][4] [5][5]  
- *		[3][6] [3][7] [0][8] | [4][6] [4][7] [4][8] | [5][6] [5][7] [5][8]  
+ *		[3][0] [3][1] [0][2] | [4][0] [4][1] [4][2] | [5][0] [5][1] [5][2]
+ *		[3][3] [3][4] [0][5] | [4][3] [4][4] [4][5] | [5][3] [5][4] [5][5]
+ *		[3][6] [3][7] [0][8] | [4][6] [4][7] [4][8] | [5][6] [5][7] [5][8]
  *      ---------------------|----------------------|---------------------
- *		[6][0] [6][1] [6][2] | [7][0] [7][1] [7][2] | [8][0] [8][1] [8][2]  
- *		[6][3] [6][4] [6][5] | [7][3] [7][4] [7][5] | [8][3] [8][4] [8][5]  
+ *		[6][0] [6][1] [6][2] | [7][0] [7][1] [7][2] | [8][0] [8][1] [8][2]
+ *		[6][3] [6][4] [6][5] | [7][3] [7][4] [7][5] | [8][3] [8][4] [8][5]
  *		[6][6] [6][7] [6][8] | [7][6] [7][7] [7][8] | [8][6] [8][7] [8][8]  
  *
  */
 int  tttGrid[9][9];
 
 /* for debugging purpose, it is a good idea to record all the steps */
-int gameSteps[81]; 
+int gameSteps[81];
 
-/* 
+/*
  * We will use one dimension array of 9 elements to represent tic tac toe:
  * the array index and tic tac toe board:
  *      [0] | [1] | [2]
@@ -42,16 +42,16 @@ int gameSteps[81];
  */
 int  condenseGrid[9];
 
-/* 
+/*
  * There are 9 tic tac toe sqaures. Each tic tac toe has 9 continuous integer values.
  * This array indicates the start integer value for each square
  */
 int  thisTTTStart[9];
 
 /* the function to draw the game board */
-void printBoard(); 
+void printBoard();
 
-/* 
+/*
  * Put value PLAYERX or PLAYERO to the position in the specified tic tac toe square
  */
 void markPosition(char player, int whichTtt, int position)    // position is 0, 1, 2, ... 8
@@ -66,10 +66,10 @@ void markPosition(char player, int whichTtt, int position)    // position is 0, 
 	if ( position < 0 || position > 8)
 		return;
 
-	tttGrid[whichTtt][position] = player;	
+	tttGrid[whichTtt][position] = player;
 }
 
-/* 
+/*
  * Check the position in the specified tic tac toe square:
  * Return "false" if cannot put 'X'/'O' to that spot, otherwise return "true"
  *  1. If the specified tic tac tow square is already has winner, then cannot put more, return false
@@ -99,27 +99,27 @@ bool checkPosition(int whichTtt, int position, int prevTtt, int prevPosition)   
 
 	/* if the legal 3x3 grid already has winner, then the current postion can be at any 3x3 grid */
 	if ( (condenseGrid[legal_ttt] == PLAYERX) || (condenseGrid[legal_ttt] == PLAYERO) )
-		return true;	
-	else  /* current movement must be in the tttGrid[legal_ttt][], otherwise, return false */ 
+		return true;
+	else  /* current movement must be in the tttGrid[legal_ttt][], otherwise, return false */
 	{
 		if (whichTtt != legal_ttt)
 			return false;
 		else
 			return true;
 	}
-		
-	return false; /* doesn't matter what to return, it should never be here */ 	
+
+	return false; /* doesn't matter what to return, it should never be here */
 }
 
 
-/* 
+/*
  * Check if all the legal spots are taken.
  * Return "false" if there is more legal spots, otherwise return "true"
  */
 bool checkGridFull()
 {
 	int whichTtt, i;
-	
+
 	/* skip the tic tac toe squares that already have winner */
 	for (whichTtt = 0; whichTtt < 9; whichTtt++)
 	{
@@ -138,7 +138,7 @@ bool checkGridFull()
 }
 
 
-/* 
+/*
  * For a given tic tac toe (whichTtt), check that if there is a winner
  * Return the winner of "PLAYERX" or "PLAYERO" if there is a winner,
  * otherwise return '0'
@@ -177,7 +177,7 @@ int checkwin(int whichTtt)
 		return 0;
 }
 
-/* 
+/*
  * For the condenseGrid (final) tic tac toe result, check that if there is a winner
  * Return the winner of "PLAYERX" or "PLAYERO" if there is a winner,
  * otherwise return '0'
@@ -210,7 +210,7 @@ int checkFinalWin()
 		return 0;
 
 }
-	
+
 /*
  * Format one line of string for the game board print
  *  - row; start with 1 (not 0)
@@ -223,30 +223,30 @@ void formatGameRow(int row, char buffer[]) // row is 1, 2, ..., 9
 
 	/*
      *  tttGrid[][] index in game board:
-	 *		[0][0] [0][1] [0][2] | [1][0] [1][1] [1][2] | [2][0] [2][1] [2][2]  
-	 *		[0][3] [0][4] [0][5] | [1][3] [1][4] [1][5] | [2][3] [2][4] [2][5]  
-	 *		[0][6] [0][7] [0][8] | [1][6] [1][7] [1][8] | [2][6] [2][7] [2][8]  
+	 *		[0][0] [0][1] [0][2] | [1][0] [1][1] [1][2] | [2][0] [2][1] [2][2]
+	 *		[0][3] [0][4] [0][5] | [1][3] [1][4] [1][5] | [2][3] [2][4] [2][5]
+	 *		[0][6] [0][7] [0][8] | [1][6] [1][7] [1][8] | [2][6] [2][7] [2][8]
      *      ---------------------|----------------------|---------------------
-	 *		[3][0] [3][1] [0][2] | [4][0] [4][1] [4][2] | [5][0] [5][1] [5][2]  
-	 *		[3][3] [3][4] [0][5] | [4][3] [4][4] [4][5] | [5][3] [5][4] [5][5]  
-	 *		[3][6] [3][7] [0][8] | [4][6] [4][7] [4][8] | [5][6] [5][7] [5][8]  
+	 *		[3][0] [3][1] [0][2] | [4][0] [4][1] [4][2] | [5][0] [5][1] [5][2]
+	 *		[3][3] [3][4] [0][5] | [4][3] [4][4] [4][5] | [5][3] [5][4] [5][5]
+	 *		[3][6] [3][7] [0][8] | [4][6] [4][7] [4][8] | [5][6] [5][7] [5][8]
      *      ---------------------|----------------------|---------------------
-	 *		[6][0] [6][1] [6][2] | [7][0] [7][1] [7][2] | [8][0] [8][1] [8][2]  
-	 *		[6][3] [6][4] [6][5] | [7][3] [7][4] [7][5] | [8][3] [8][4] [8][5]  
-	 *		[6][6] [6][7] [6][8] | [7][6] [7][7] [7][8] | [8][6] [8][7] [8][8]  
+	 *		[6][0] [6][1] [6][2] | [7][0] [7][1] [7][2] | [8][0] [8][1] [8][2]
+	 *		[6][3] [6][4] [6][5] | [7][3] [7][4] [7][5] | [8][3] [8][4] [8][5]
+	 *		[6][6] [6][7] [6][8] | [7][6] [7][7] [7][8] | [8][6] [8][7] [8][8]
      *
      *  gameGrid[][] index in game board:
-	 *		[0][0] [0][1] [0][2] | [0][3] [0][4] [0][5] | [0][6] [0][7] [0][8]  
-	 *		[1][0] [1][1] [1][2] | [1][3] [1][4] [1][5] | [1][6] [1][7] [1][8]  
-	 *		[2][0] [2][1] [2][2] | [2][3] [2][4] [2][5] | [2][6] [2][7] [2][8]  
+	 *		[0][0] [0][1] [0][2] | [0][3] [0][4] [0][5] | [0][6] [0][7] [0][8]
+	 *		[1][0] [1][1] [1][2] | [1][3] [1][4] [1][5] | [1][6] [1][7] [1][8]
+	 *		[2][0] [2][1] [2][2] | [2][3] [2][4] [2][5] | [2][6] [2][7] [2][8]
      *      ---------------------|----------------------|---------------------
-	 *		[3][0] [3][1] [3][2] | [3][3] [3][4] [3][5] | [3][6] [3][7] [3][8]  
-	 *		[4][0] [4][1] [4][2] | [4][3] [4][4] [4][5] | [4][6] [4][7] [4][8]  
-	 *		[5][0] [5][1] [5][2] | [5][3] [5][4] [5][5] | [5][6] [5][7] [5][8]  
+	 *		[3][0] [3][1] [3][2] | [3][3] [3][4] [3][5] | [3][6] [3][7] [3][8]
+	 *		[4][0] [4][1] [4][2] | [4][3] [4][4] [4][5] | [4][6] [4][7] [4][8]
+	 *		[5][0] [5][1] [5][2] | [5][3] [5][4] [5][5] | [5][6] [5][7] [5][8]
      *      ---------------------|----------------------|---------------------
-	 *		[6][0] [6][1] [6][2] | [6][3] [6][4] [6][5] | [6][6] [6][7] [6][8]  
-	 *		[7][0] [7][1] [7][2] | [7][3] [7][4] [7][5] | [7][6] [7][7] [7][8]  
-	 *		[8][0] [8][1] [8][2] | [8][3] [8][4] [8][5] | [8][6] [8][7] [8][8]  
+	 *		[6][0] [6][1] [6][2] | [6][3] [6][4] [6][5] | [6][6] [6][7] [6][8]
+	 *		[7][0] [7][1] [7][2] | [7][3] [7][4] [7][5] | [7][6] [7][7] [7][8]
+	 *		[8][0] [8][1] [8][2] | [8][3] [8][4] [8][5] | [8][6] [8][7] [8][8]
 	 *
    	 * To format a print line, we will use gameGrid[][]. So, first, we will map
      * the tttGrid[][] to gameGrid[][]
@@ -260,14 +260,14 @@ void formatGameRow(int row, char buffer[]) // row is 1, 2, ..., 9
 	}
 
 	/* first the the line with default values: each value use two digits */
-	sprintf (buffer,   "  %02d  |  %02d  |  %02d  ||  %02d  |  %02d  |  %02d  ||  %02d  |  %02d  |  %02d  \n", 
+	sprintf (buffer,   "  %02d  |  %02d  |  %02d  ||  %02d  |  %02d  |  %02d  ||  %02d  |  %02d  |  %02d  \n",
 		gameGrid[row-1][0], gameGrid[row-1][1], gameGrid[row-1][2],
 		gameGrid[row-1][3], gameGrid[row-1][4], gameGrid[row-1][5],
 		gameGrid[row-1][6], gameGrid[row-1][7], gameGrid[row-1][8]);
 
-	/* 
-     * Then check to see if a spot is belong to PLAYERX or PLAYERO. 
-     * If do, then replace the two digits by " X" or " O" 
+	/*
+     * Then check to see if a spot is belong to PLAYERX or PLAYERO.
+     * If do, then replace the two digits by " X" or " O"
      */
 	for (i = 0; i < 9; i++)
 	{
@@ -288,7 +288,7 @@ void formatGameRow(int row, char buffer[]) // row is 1, 2, ..., 9
 void debug_print_steps()
 {
 	int i;
-	
+
 	cout << "Game Steps: ";
 	for (i = 0; i < 81; i++)
 	{
@@ -297,13 +297,13 @@ void debug_print_steps()
 			cout << endl;
 			return;
 		}
-			
+
 		cout << gameSteps[i] << ",  ";
 
 		if (i != 0 &&  (i % 10 == 0) )
 			cout << endl;
 	}
-	
+
 	return;
 }
 
@@ -311,7 +311,7 @@ void debug_print_steps()
 
 int main()
 {
-	int  i, j, k; 
+	int  i, j, k;
 	int userSelection, whichTtt, position;
 	string Selection;
 	int prevSelection,prevTtt, prevPosition;
@@ -321,38 +321,38 @@ int main()
 	int  winner, tttWinner;
 	string playerName[2] = {"Player X", "Player O"};
 
-	/* 
-	 * initialize tttGrid: 
+	/*
+	 * initialize tttGrid:
      *
 	 * the two dimensions index and game board relationship:
-	 *		[0][0] [0][1] [0][2] | [1][0] [1][1] [1][2] | [2][0] [2][1] [2][2]  
-	 *		[0][3] [0][4] [0][5] | [1][3] [1][4] [1][5] | [2][3] [2][4] [2][5]  
-	 *		[0][6] [0][7] [0][8] | [1][6] [1][7] [1][8] | [2][6] [2][7] [2][8]  
+	 *		[0][0] [0][1] [0][2] | [1][0] [1][1] [1][2] | [2][0] [2][1] [2][2]
+	 *		[0][3] [0][4] [0][5] | [1][3] [1][4] [1][5] | [2][3] [2][4] [2][5]
+	 *		[0][6] [0][7] [0][8] | [1][6] [1][7] [1][8] | [2][6] [2][7] [2][8]
      *      ---------------------|----------------------|---------------------
-	 *		[3][0] [3][1] [0][2] | [4][0] [4][1] [4][2] | [5][0] [5][1] [5][2]  
-	 *		[3][3] [3][4] [0][5] | [4][3] [4][4] [4][5] | [5][3] [5][4] [5][5]  
-	 *		[3][6] [3][7] [0][8] | [4][6] [4][7] [4][8] | [5][6] [5][7] [5][8]  
+	 *		[3][0] [3][1] [0][2] | [4][0] [4][1] [4][2] | [5][0] [5][1] [5][2]
+	 *		[3][3] [3][4] [0][5] | [4][3] [4][4] [4][5] | [5][3] [5][4] [5][5]
+	 *		[3][6] [3][7] [0][8] | [4][6] [4][7] [4][8] | [5][6] [5][7] [5][8]
      *      ---------------------|----------------------|---------------------
-	 *		[6][0] [6][1] [6][2] | [7][0] [7][1] [7][2] | [8][0] [8][1] [8][2]  
-	 *		[6][3] [6][4] [6][5] | [7][3] [7][4] [7][5] | [8][3] [8][4] [8][5]  
-	 *		[6][6] [6][7] [6][8] | [7][6] [7][7] [7][8] | [8][6] [8][7] [8][8]  
+	 *		[6][0] [6][1] [6][2] | [7][0] [7][1] [7][2] | [8][0] [8][1] [8][2]
+	 *		[6][3] [6][4] [6][5] | [7][3] [7][4] [7][5] | [8][3] [8][4] [8][5]
+	 *		[6][6] [6][7] [6][8] | [7][6] [7][7] [7][8] | [8][6] [8][7] [8][8]
      *
      *  The board initialized values:
-     *      01  02  03 | 10  11  12 | 19  20  21  
-     *      04  05  06 | 13  14  15 | 22  23  24  
-  	 *      07  08  09 | 16  17  18 | 25  26  27  
+     *      01  02  03 | 10  11  12 | 19  20  21
+     *      04  05  06 | 13  14  15 | 22  23  24
+  	 *      07  08  09 | 16  17  18 | 25  26  27
      *     ------------|------------|-----------
-     *      28  29  30 | 37  38  39 | 46  47  48  
-     *      31  32  33 | 40  41  42 | 49  50  51  
-     *      34  35  36 | 43  44  45 | 52  53  54  
+     *      28  29  30 | 37  38  39 | 46  47  48
+     *      31  32  33 | 40  41  42 | 49  50  51
+     *      34  35  36 | 43  44  45 | 52  53  54
      *     ------------|------------|-----------
-  	 *      55  56  57 | 64  65  66 | 73  74  75  
-     *      58  59  60 | 67  68  69 | 76  77  78  
-     *      61  62  63 | 70  71  72 | 79  80  81  
+  	 *      55  56  57 | 64  65  66 | 73  74  75
+     *      58  59  60 | 67  68  69 | 76  77  78
+     *      61  62  63 | 70  71  72 | 79  80  81
      *
-     * thisTTTStart[9] = {1, 10, 19, 28, 37, 46, 55, 64, 73};     
-	 * 
-     */	
+     * thisTTTStart[9] = {1, 10, 19, 28, 37, 46, 55, 64, 73};
+	 *
+     */
 	count = 0;
 	for (i = 0; i < 9; i++)
 	{
@@ -361,13 +361,13 @@ int main()
 			count++;
 			if (j == 0)
 			{
-				thisTTTStart[i] = count;     
+				thisTTTStart[i] = count;
 			}
 			tttGrid[i][j] = count;
 		}
 	}
 
-	/* 
+	/*
 	 * condenseGrid[] index in board:
  	 *      [0] | [1] | [2]
  	 *      ----|-----|----
@@ -387,8 +387,8 @@ int main()
 	}
 
 
-	/* 
-	 * Play the game, till either one player wins or all the legal grids are taken 
+	/*
+	 * Play the game, till either one player wins or all the legal grids are taken
      */
 	prevTtt = -1;
 	prevPosition = -1;
@@ -399,11 +399,11 @@ int main()
 		printBoard();
 		if ((count % 2) == 0)
 			player = PLAYERX;
-		else	
+		else
 			player = PLAYERO;
 
 		cout << playerName[count % 2] << ", enter a number [last move: " << prevSelection << "]:  ";
-		
+
 		#if 0
 		cin >> userSelection;
         if (cin.fail())
@@ -460,17 +460,17 @@ int main()
 			{
 				gameOver = true;
 			}
-		} 
-		
+		}
+
 		/* check grid full */
 		if (checkGridFull())
 		{
 			gameOver = true;
 		}
-	} 
+	}
 
-	/* 
-	 * Draw the final result board, and annouce the result 
+	/*
+	 * Draw the final result board, and annouce the result
      */
 	printBoard();
 	if(winner == PLAYERX)
@@ -497,7 +497,7 @@ void printBoard()
 	cout << endl;
 
 	sprintf (vert,   "      |      |      ||      |      |      ||      |      |      \n");
-	sprintf (horv,   "______|______|______||______|______|______||______|______|______\n"); 
+	sprintf (horv,   "______|______|______||______|______|______||______|______|______\n");
 
 	for (i = 0; i < 9; i++)
 	{
@@ -510,17 +510,17 @@ void printBoard()
 		if (i < 8)	cout << horv;
 		else        cout << vert;
 	}
-   
+
     /* show virtual board result */
 	cout << "\n  Virtual board result\n";
 	sprintf (vert,   "      |      |      \n");
-	sprintf (horv,   "______|______|______\n"); 
+	sprintf (horv,   "______|______|______\n");
 
 	sprintf (rows,   "      |      |      \n");
 	for (i = 0; i < 3; i++)
-		if (condenseGrid[i] == PLAYERX) 
+		if (condenseGrid[i] == PLAYERX)
 			rows[7*i + 3] = 'X';
-		else if (condenseGrid[i] == PLAYERO) 
+		else if (condenseGrid[i] == PLAYERO)
 			rows[7*i + 3] = 'O';
 		else
 			rows[7*i + 3] = '-';
@@ -531,21 +531,21 @@ void printBoard()
 
 	sprintf (rows,   "      |      |      \n");
 	for (i = 0; i < 3; i++)
-		if (condenseGrid[3 + i] == PLAYERX) 
+		if (condenseGrid[3 + i] == PLAYERX)
 			rows[7*i + 3] = 'X';
-		else if (condenseGrid[3 + i] == PLAYERO) 
+		else if (condenseGrid[3 + i] == PLAYERO)
 			rows[7*i + 3] = 'O';
 		else
 			rows[7*i + 3] = '-';
 	cout << vert;
 	cout << rows;
 	cout << horv;
-    
+
 	sprintf (rows,   "      |      |      \n");
 	for (i = 0; i < 3; i++)
-		if (condenseGrid[6 + i] == PLAYERX) 
+		if (condenseGrid[6 + i] == PLAYERX)
 			rows[7*i + 3] = 'X';
-		else if (condenseGrid[6 + i] == PLAYERO) 
+		else if (condenseGrid[6 + i] == PLAYERO)
 			rows[7*i + 3] = 'O';
 		else
 			rows[7*i + 3] = '-';
