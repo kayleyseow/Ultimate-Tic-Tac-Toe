@@ -88,7 +88,8 @@ void tutorialprint()
 
 
 /*
- * The real game board has indices of locations mapped accordingly.
+ * The real game board, which has 9x9 grids.
+ * Please note the special index arrangement!!:
  *		[0][0] [0][1] [0][2] | [1][0] [1][1] [1][2] | [2][0] [2][1] [2][2]
  *		[0][3] [0][4] [0][5] | [1][3] [1][4] [1][5] | [2][3] [2][4] [2][5]
  *		[0][6] [0][7] [0][8] | [1][6] [1][7] [1][8] | [2][6] [2][7] [2][8]
@@ -103,10 +104,8 @@ void tutorialprint()
  *
  */
 int  tttGrid[9][9];
-
 /* for debugging purpose, it is a good idea to record all the steps */
 int gameSteps[81];
-
 /*
  * We will use one dimension array of 9 elements to represent tic tac toe:
  * the array index and tic tac toe board:
@@ -119,11 +118,9 @@ int gameSteps[81];
 int  condenseGrid[9];
 int  thisTTTStart[9];
 
-void printBoard(); // the function to draw the game board
 
-/*
- * Put value PLAYERX or PLAYERO to the position in the specified tic tac toe square
- */
+// Put value PLAYERX or PLAYERO to the position in the specified tic tac toe square
+
 void markPosition(char player, int whichTtt, int position)    // position is 0, 1, 2, ... 8
 {
 	/* make sure that player correct */
@@ -379,7 +376,7 @@ void debug_print_steps()
 
 
 
-int main()
+int game()
 {
 	int  i, j, k;
 	int userSelection, whichTtt, position;
