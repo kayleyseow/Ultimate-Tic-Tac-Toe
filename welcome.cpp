@@ -9,13 +9,51 @@
 using namespace std;
 
 
-void tutorial();
-void tutorialprint();
-string getPosition();
-void printBoard(); // the function to draw the game board
+void tutorial();		// The tutorial function is the main function, handles interactive element.
+void tutorialprint();	// The tutorialprint function prints the tutorial, is the static portion.
+void printBoard(); 		// the function to draw the game board
+void markPosition();	// Put value PLAYERX or PLAYERO to the position in the specified tic tac toe square
+bool checkPosition();	//Check the position in the specified tic tac toe square, return false if spot is taken or is grid full. if spot has initial value, true.
+bool checkGridFull();	// Check if all the legal spots are taken. Return "false" if there is more legal spots, otherwise return "true"
+int checkwin();			// Checks for winner given whichTtt, returns winner if there is one, returns o if there is not.
+int checkFinalWin();	// Same as checkwin, except for condensed board instead of whichTtt.
+void formatGameRow();	// Format one line of string for the game board print - row; start with 1 (not 0)
+void debug_print_steps();// Prints all the moves made. For debugging.
+int game();
+
+/*
+ * The real game board, which has 9x9 grids.
+ * Please note the special index arrangement!!:
+ *		[0][0] [0][1] [0][2] | [1][0] [1][1] [1][2] | [2][0] [2][1] [2][2]
+ *		[0][3] [0][4] [0][5] | [1][3] [1][4] [1][5] | [2][3] [2][4] [2][5]
+ *		[0][6] [0][7] [0][8] | [1][6] [1][7] [1][8] | [2][6] [2][7] [2][8]
+ *      ---------------------|----------------------|---------------------
+ *		[3][0] [3][1] [0][2] | [4][0] [4][1] [4][2] | [5][0] [5][1] [5][2]
+ *		[3][3] [3][4] [0][5] | [4][3] [4][4] [4][5] | [5][3] [5][4] [5][5]
+ *		[3][6] [3][7] [0][8] | [4][6] [4][7] [4][8] | [5][6] [5][7] [5][8]
+ *      ---------------------|----------------------|---------------------
+ *		[6][0] [6][1] [6][2] | [7][0] [7][1] [7][2] | [8][0] [8][1] [8][2]
+ *		[6][3] [6][4] [6][5] | [7][3] [7][4] [7][5] | [8][3] [8][4] [8][5]
+ *		[6][6] [6][7] [6][8] | [7][6] [7][7] [7][8] | [8][6] [8][7] [8][8]
+ *
+ */
+int  tttGrid[9][9];
+/*
+ * We will use one dimension array of 9 elements to represent tic tac toe:
+ * the array index and tic tac toe board:
+ *      [0] | [1] | [2]
+ *      ----|-----|----
+ *      [3] | [4] | [5]
+ *      ----|-----|-----
+ *      [6] | [7] | [8]
+ */
+int  condenseGrid[9];
+
+int gameSteps[81];
+int  thisTTTStart[9];
 
 
-// The tutorial function is the main function, which repeats the calls to tutorialprint()
+
 void tutorial()
 {
 	char tutorialanswer = 'y';
@@ -36,7 +74,7 @@ void tutorial()
 	}
 }
 
-// The tutorialprint function prints the tutorial itself -- interactive element is the requirement that the user press RETURN to move onto the next rule
+
 void tutorialprint()
 {
 	// First Part (1/6)
@@ -87,41 +125,7 @@ void tutorialprint()
 }
 
 
-/*
- * The real game board, which has 9x9 grids.
- * Please note the special index arrangement!!:
- *		[0][0] [0][1] [0][2] | [1][0] [1][1] [1][2] | [2][0] [2][1] [2][2]
- *		[0][3] [0][4] [0][5] | [1][3] [1][4] [1][5] | [2][3] [2][4] [2][5]
- *		[0][6] [0][7] [0][8] | [1][6] [1][7] [1][8] | [2][6] [2][7] [2][8]
- *      ---------------------|----------------------|---------------------
- *		[3][0] [3][1] [0][2] | [4][0] [4][1] [4][2] | [5][0] [5][1] [5][2]
- *		[3][3] [3][4] [0][5] | [4][3] [4][4] [4][5] | [5][3] [5][4] [5][5]
- *		[3][6] [3][7] [0][8] | [4][6] [4][7] [4][8] | [5][6] [5][7] [5][8]
- *      ---------------------|----------------------|---------------------
- *		[6][0] [6][1] [6][2] | [7][0] [7][1] [7][2] | [8][0] [8][1] [8][2]
- *		[6][3] [6][4] [6][5] | [7][3] [7][4] [7][5] | [8][3] [8][4] [8][5]
- *		[6][6] [6][7] [6][8] | [7][6] [7][7] [7][8] | [8][6] [8][7] [8][8]
- *
- */
-int  tttGrid[9][9];
-/* for debugging purpose, it is a good idea to record all the steps */
-int gameSteps[81];
-/*
- * We will use one dimension array of 9 elements to represent tic tac toe:
- * the array index and tic tac toe board:
- *      [0] | [1] | [2]
- *      ----|-----|----
- *      [3] | [4] | [5]
- *      ----|-----|-----
- *      [6] | [7] | [8]
- */
-int  condenseGrid[9];
-int  thisTTTStart[9];
-
-
-// Put value PLAYERX or PLAYERO to the position in the specified tic tac toe square
-
-void markPosition(char player, int whichTtt, int position)    // position is 0, 1, 2, ... 8
+void markPosition(char player, int whichTtt, int position)
 {
 	/* make sure that player correct */
 	if ((player != PLAYERX) && (player != PLAYERO))
@@ -136,14 +140,8 @@ void markPosition(char player, int whichTtt, int position)    // position is 0, 
 	tttGrid[whichTtt][position] = player;
 }
 
-/*
- * Check the position in the specified tic tac toe square:
- * Return "false" if cannot put 'X'/'O' to that spot, otherwise return "true"
- *  1. If the specified tic tac tow square is already has winner, then cannot put more, return false
- *  2. If the specified spot has the default initial value, then return true
- *  3. If no more free spot, return false
- */
-bool checkPosition(int whichTtt, int position, int prevTtt, int prevPosition)   // position is 0, 1, 2, ... 8
+
+bool checkPosition(int whichTtt, int position, int prevTtt, int prevPosition)
 {
 	int legal_ttt;
 
@@ -179,10 +177,6 @@ bool checkPosition(int whichTtt, int position, int prevTtt, int prevPosition)   
 }
 
 
-/*
- * Check if all the legal spots are taken.
- * Return "false" if there is more legal spots, otherwise return "true"
- */
 bool checkGridFull()
 {
 	int whichTtt, i;
@@ -205,11 +199,6 @@ bool checkGridFull()
 }
 
 
-/*
- * For a given tic tac toe (whichTtt), check that if there is a winner
- * Return the winner of "PLAYERX" or "PLAYERO" if there is a winner,
- * otherwise return '0'
- */
 int checkwin(int whichTtt)
 {
 	/* If we already have a winner for this tic tac toe */
@@ -223,6 +212,7 @@ int checkwin(int whichTtt)
  	 *      [3] | [4] | [5]
      *      ----|-----|-----
  	 *      [6] | [7] | [8]
+	 *      brute force all 8 possible win states.
 	 */
 	if (tttGrid[whichTtt][0] == tttGrid[whichTtt][1] && tttGrid[whichTtt][1] == tttGrid[whichTtt][2])        // row 1
 		return tttGrid[whichTtt][0];
@@ -244,18 +234,15 @@ int checkwin(int whichTtt)
 		return 0;
 }
 
-/*
- * For the condenseGrid (final) tic tac toe result, check that if there is a winner
- * Return the winner of "PLAYERX" or "PLAYERO" if there is a winner,
- * otherwise return '0'
- */
+
 int checkFinalWin()
 {
  	/*      [0] | [1] | [2]
  	 *      ----|-----|----
  	 *      [3] | [4] | [5]
-     *      ----|-----|-----
+	 *      ----|-----|-----
  	 *      [6] | [7] | [8]
+	 *      brute force all 8 possible win states.
 	 */
 	if (condenseGrid[0] == condenseGrid[1] && condenseGrid[1] == condenseGrid[2])        // row 1
     	return condenseGrid[0];
@@ -278,12 +265,8 @@ int checkFinalWin()
 
 }
 
-/*
- * Format one line of string for the game board print
- *  - row; start with 1 (not 0)
- *
- */
-void formatGameRow(int row, char buffer[]) // row is 1, 2, ..., 9
+
+void formatGameRow(int row, char buffer[])
 {
 	int i, j;
 	int  gameGrid[9][9];
@@ -351,7 +334,7 @@ void formatGameRow(int row, char buffer[]) // row is 1, 2, ..., 9
 	}
 }
 
-/* for debugging use */
+
 void debug_print_steps()
 {
 	int i;
@@ -375,10 +358,9 @@ void debug_print_steps()
 }
 
 
-
 int game()
 {
-	int  i, j, k;
+	int  i, j;
 	int userSelection, whichTtt, position;
 	string Selection;
 	int prevSelection,prevTtt, prevPosition;
@@ -550,7 +532,6 @@ int game()
 	cin.ignore();
 	return 0;
 }
-
 
 
 void printBoard()
