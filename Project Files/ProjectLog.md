@@ -1,34 +1,13 @@
 # Project Log  
-## Goals
-#### Array Functions
-- [ ] ```winCheck()```
-- deals with the arrays
-- actually two functions
-- make sure to take into account ties (big board)
-- math
-- Crystal
-- [ ] ```getPos()```
-- calculates difference between the arrays.
-- math
-- Ellen
-#### Graphics Functions
-- [ ] ```welcome()```
-- easy, but needs graphics
-- Tiffany
-- [ ] ```draw```
-- Vincent
-- [ ] ```tutorial()```
-- uses draw function and lots of code, plus some text.
-- should be pretty chill after draw gets figured out
-- Kayley
-#### Everything Things
-- [ ] ```winner()```
-- similar to welcome.
-- [ ] ```input```
-- pretty painful, need to figure out draw first, then use mouse position probably. or use text input, idk
-- [ ] add forcequit functions (forfeiture)
-
-## Progress
+**A log of our progress on this project.**
+#### 1/12/2021
+- We had an hour long Discord vc and started getting the finishing touches done on our project
+- Tiffany and Ellen worked on the presentation, waiting until Hoffman gets back to us for the design document
+- Vincent (Crystal) worked on the final code and formatting
+- Kayley worked on organizing all of the files into folders and cleaning up the repository
+  - Had to switch to glitch because in the middle Atom stopped connecting to the repository
+#### 1/11/2021
+- Vincent continued to work on our huge compiled file
 #### 1/10/2021
 - Our grind day; had a 2 hour long Dicord vc and got a lot of things finished today!
 - We decided to not have our final product be made with GUI; we are able to focus on the presentation more
