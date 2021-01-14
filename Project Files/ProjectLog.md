@@ -1,5 +1,8 @@
 # Project Log  
 **A log of our progress on this project.**
+#### 1/14/2021
+- We presented our project in class today
+- Kayley added the final finishing touches on `README.md`
 #### 1/13/2021
 - Discord vc over office hours to finalize project and presentation
 - Vincent pushed final commented code in `welcome.cpp`, Kayley renamed file to `ultimateTicTacToe.cpp`
@@ -15,7 +18,7 @@
 #### 1/11/2021
 - Vincent continued to work on our huge compiled file
 #### 1/10/2021
-- Our grind day; had a 2 hour long Dicord vc and got a lot of things finished today!
+- Our grind day; had a 2 hour long Discord vc and got a lot of things finished today!
 - We decided to not have our final product be made with GUI; we are able to focus on the presentation more
 - Created the folder `Individual Functions`
   - Kayley finished writing the tutorial and finished the final version of `tutorial.cpp` to be put into the final program
